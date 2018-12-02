@@ -27,21 +27,30 @@ public class Ranking : MonoBehaviour {
 
         this.thirdScore = GameObject.Find("3rd");
 
-        this.firstScore.GetComponent<Text>().text ="1st　　:" + PlayerPrefs.GetInt("1st", 0).ToString();
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        this.firstScore.GetComponent<Text>().text = "1st　　:" + PlayerPrefs.GetInt("1st", 0).ToString();
 
         this.secondScore.GetComponent<Text>().text = "2nd　　:" + PlayerPrefs.GetInt("2nd", 0).ToString();
 
         this.thirdScore.GetComponent<Text>().text = "3rd　　:" + PlayerPrefs.GetInt("3rd", 0).ToString();
     }
-	
-	// Update is called once per frame
-	void Update () {
-
-    }
 
     public void ResetButtonDown()
     {
-        //PlayerPrefs.DeleteAll();
         this.warning.gameObject.SetActive(true);
+    }
+
+    public void RestScore()
+    {
+        PlayerPrefs.DeleteAll();
+        this.warning.gameObject.SetActive(false);
+    }
+
+    public void CloseWarning()
+    {
+        this.warning.gameObject.SetActive(false);
     }
 }

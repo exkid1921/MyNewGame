@@ -368,7 +368,7 @@ Prefab:
     - target: {fileID: 224065836183717716, guid: 4dcbaa3d1167faa41be2a043be9705b9,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 1200
+      value: 1400
       objectReference: {fileID: 0}
     - target: {fileID: 224065836183717716, guid: 4dcbaa3d1167faa41be2a043be9705b9,
         type: 2}
@@ -404,6 +404,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114593596455811196, guid: 4dcbaa3d1167faa41be2a043be9705b9,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dcbaa3d1167faa41be2a043be9705b9, type: 2}
@@ -498,7 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -572,7 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -34785,7 +34790,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 100
+  field of view: 95
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
